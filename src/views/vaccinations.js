@@ -8,10 +8,11 @@ const Vaccinations = (props) => {
   return (
     <div className="vaccinations-container">
       <Helmet>
-        <title>Vaccinations - Half Flamboyant Meerkat</title>
+        <title>Vaccinations - WD50_MP2</title>
+        <meta property="og:title" content="Vaccinations - WD50_MP2" />
         <meta
-          property="og:title"
-          content="Vaccinations - Half Flamboyant Meerkat"
+          property="og:image"
+          content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/5df4fe0d-c56b-4e40-a2f8-62ae2ce60a05/4a54f7e3-642b-4238-85fb-fa6d9b3e4d19?org_if_sml=1"
         />
       </Helmet>
     </div>
