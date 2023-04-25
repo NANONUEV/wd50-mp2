@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { Player } from '@lottiefiles/react-lottie-player'
 import DangerousHTML from 'dangerous-html/react'
@@ -45,7 +46,9 @@ const Home = (props) => {
             <br></br>
           </h1>
           <span className="home-text09">Veterinarian in the Philippines</span>
-          <button className="home-button button">MAKE AN APPOINTMENT</button>
+          <Link to="/make-an-appointment" className="home-navlink button">
+            MAKE AN APPOINTMENT
+          </Link>
           <span className="home-text10">HAVING AN EMERGENCY?</span>
           <span className="home-text11">Call us at (999) 999-9999</span>
         </div>
@@ -55,11 +58,13 @@ const Home = (props) => {
             data-role="Accordion"
             className="home-header"
           >
-            <img
-              alt="logo"
-              src="/playground_assets/vetopia%20logo%20%5B350%20%C3%97%20100px%5D1-1500h.png"
-              className="home-image"
-            />
+            <Link to="/" className="home-navlink01">
+              <img
+                alt="logo"
+                src="/playground_assets/vetopia%20logo%20%5B350%20%C3%97%20100px%5D1-1500h.png"
+                className="home-image"
+              />
+            </Link>
             <div className="home-separator"></div>
             <nav className="home-nav">
               <nav className="home-nav1">
@@ -88,9 +93,12 @@ const Home = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="home-dropdown-toggle01"
                       >
-                        <span className="home-text15 footer_black_below">
+                        <Link
+                          to="/our-culture"
+                          className="home-navlink02 footer_black_below"
+                        >
                           our culture
-                        </span>
+                        </Link>
                       </div>
                     </li>
                     <li
@@ -101,9 +109,12 @@ const Home = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="home-dropdown-toggle02"
                       >
-                        <span className="home-text16 footer_black_below">
+                        <Link
+                          to="/our-team"
+                          className="home-navlink03 footer_black_below"
+                        >
                           our team
-                        </span>
+                        </Link>
                       </div>
                     </li>
                     <li
@@ -114,10 +125,13 @@ const Home = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="home-dropdown-toggle03"
                       >
-                        <span className="home-text17 footer_black_below">
+                        <Link
+                          to="/careers"
+                          className="home-navlink04 footer_black_below"
+                        >
                           <span className="footer_black_below">careers</span>
                           <br></br>
-                        </span>
+                        </Link>
                       </div>
                     </li>
                   </ul>
@@ -130,7 +144,7 @@ const Home = (props) => {
                     data-thq="thq-dropdown-toggle"
                     className="home-dropdown-toggle04"
                   >
-                    <span className="home-text20">
+                    <span className="home-text17">
                       <span>general practice</span>
                       <br></br>
                     </span>
@@ -147,9 +161,12 @@ const Home = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="home-dropdown-toggle05"
                       >
-                        <span className="home-text23 footer_black_below">
+                        <Link
+                          to="/pet-exams"
+                          className="home-navlink05 footer_black_below"
+                        >
                           pet exams
-                        </span>
+                        </Link>
                       </div>
                     </li>
                     <li
@@ -160,9 +177,12 @@ const Home = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="home-dropdown-toggle06"
                       >
-                        <span className="home-text24 footer_black_below">
+                        <Link
+                          to="/vaccinations"
+                          className="home-navlink06 footer_black_below"
+                        >
                           vaccinations
-                        </span>
+                        </Link>
                       </div>
                     </li>
                     <li
@@ -173,9 +193,12 @@ const Home = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="home-dropdown-toggle07"
                       >
-                        <span className="home-text25 footer_black_below">
+                        <Link
+                          to="/surgery"
+                          className="home-navlink07 footer_black_below"
+                        >
                           surgery
-                        </span>
+                        </Link>
                       </div>
                     </li>
                     <li
@@ -186,9 +209,12 @@ const Home = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="home-dropdown-toggle08"
                       >
-                        <span className="home-text26 footer_black_below">
+                        <Link
+                          to="/spay-neuter"
+                          className="home-navlink08 footer_black_below"
+                        >
                           spay &amp; neuter
-                        </span>
+                        </Link>
                       </div>
                     </li>
                     <li
@@ -199,9 +225,12 @@ const Home = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="home-dropdown-toggle09"
                       >
-                        <span className="home-text27 footer_black_below">
+                        <Link
+                          to="/teeth-cleaning"
+                          className="home-navlink09 footer_black_below"
+                        >
                           teeth cleaning
-                        </span>
+                        </Link>
                       </div>
                     </li>
                     <li
@@ -212,14 +241,19 @@ const Home = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="home-dropdown-toggle10"
                       >
-                        <span className="home-text28 footer_black_below">
+                        <Link
+                          to="/grooming"
+                          className="home-navlink10 footer_black_below"
+                        >
                           grooming
-                        </span>
+                        </Link>
                       </div>
                     </li>
                   </ul>
                 </div>
-                <span className="home-text29 footer_black">24/7 emergency</span>
+                <Link to="/emergency" className="home-navlink11 footer_black">
+                  24/7 emergency
+                </Link>
                 <div
                   data-thq="thq-dropdown"
                   className="home-thq-dropdown2 list-item"
@@ -228,7 +262,7 @@ const Home = (props) => {
                     data-thq="thq-dropdown-toggle"
                     className="home-dropdown-toggle11"
                   >
-                    <span className="home-text30">
+                    <span className="home-text20">
                       <span>resources</span>
                       <br></br>
                     </span>
@@ -245,9 +279,12 @@ const Home = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="home-dropdown-toggle12"
                       >
-                        <span className="home-text33 footer_black_below">
+                        <Link
+                          to="/make-an-appointment"
+                          className="home-navlink12 footer_black_below"
+                        >
                           make an appointment
-                        </span>
+                        </Link>
                       </div>
                     </li>
                     <li
@@ -258,9 +295,12 @@ const Home = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="home-dropdown-toggle13"
                       >
-                        <span className="home-text34 footer_black_below">
+                        <Link
+                          to="/new-client-form"
+                          className="home-navlink13 footer_black_below"
+                        >
                           new client form
-                        </span>
+                        </Link>
                       </div>
                     </li>
                     <li
@@ -271,9 +311,12 @@ const Home = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="home-dropdown-toggle14"
                       >
-                        <span className="home-text35 footer_black_below">
+                        <Link
+                          to="/review-us"
+                          className="home-navlink14 footer_black_below"
+                        >
                           review us
-                        </span>
+                        </Link>
                       </div>
                     </li>
                     <li
@@ -284,9 +327,12 @@ const Home = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="home-dropdown-toggle15"
                       >
-                        <span className="home-text36 footer_black_below">
+                        <Link
+                          to="/blog"
+                          className="home-navlink15 footer_black_below"
+                        >
                           blog
-                        </span>
+                        </Link>
                       </div>
                     </li>
                     <li
@@ -297,9 +343,12 @@ const Home = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="home-dropdown-toggle16"
                       >
-                        <span className="home-text37 footer_black_below">
+                        <Link
+                          to="/contact"
+                          className="home-navlink16 footer_black_below"
+                        >
                           contact
-                        </span>
+                        </Link>
                       </div>
                     </li>
                   </ul>
@@ -311,13 +360,13 @@ const Home = (props) => {
       </div>
       <div className="home-container03">
         <div className="home-container04">
-          <h1 className="home-text38">Accesible, individualized care</h1>
+          <h1 className="home-text23">Accesible, individualized care</h1>
           <div className="home-container05">
             <svg viewBox="0 0 1024 1024" className="home-icon">
               <path d="M731.429 640v-109.714c0-10.286-8-18.286-18.286-18.286h-128v-128c0-10.286-8-18.286-18.286-18.286h-109.714c-10.286 0-18.286 8-18.286 18.286v128h-128c-10.286 0-18.286 8-18.286 18.286v109.714c0 10.286 8 18.286 18.286 18.286h128v128c0 10.286 8 18.286 18.286 18.286h109.714c10.286 0 18.286-8 18.286-18.286v-128h128c10.286 0 18.286-8 18.286-18.286zM365.714 219.429h292.571v-73.143h-292.571v73.143zM146.286 219.429v731.429h-18.286c-70.286 0-128-57.714-128-128v-475.429c0-70.286 57.714-128 128-128h18.286zM822.857 219.429v731.429h-621.714v-731.429h91.429v-91.429c0-30.286 24.571-54.857 54.857-54.857h329.143c30.286 0 54.857 24.571 54.857 54.857v91.429h91.429zM1024 347.429v475.429c0 70.286-57.714 128-128 128h-18.286v-731.429h18.286c70.286 0 128 57.714 128 128z"></path>
             </svg>
           </div>
-          <h1 className="home-text39">
+          <h1 className="home-text24">
             High-end medicine with care and expertise
           </h1>
         </div>
@@ -332,7 +381,7 @@ const Home = (props) => {
           ></Player>
         </div>
         <div className="home-container07">
-          <h1 className="home-text40">
+          <h1 className="home-text25">
             Compassionate service that suits your needs
           </h1>
           <div className="home-container08">
@@ -340,7 +389,7 @@ const Home = (props) => {
               <path d="M731.429 585.143h174.286c-6.857 7.429-11.429 11.429-12.571 12.571l-356 342.857c-6.857 6.857-16 10.286-25.143 10.286s-18.286-3.429-25.143-10.286l-356.571-344c-1.143-0.571-5.714-4.571-12-11.429h210.857c16.571 0 31.429-11.429 35.429-27.429l40-160.571 108.571 381.143c4.571 15.429 18.857 26.286 35.429 26.286v0c16 0 30.286-10.857 34.857-26.286l83.429-277.143 32 64c6.286 12 18.857 20 32.571 20zM1024 340.571c0 65.714-28.571 125.714-58.857 171.429h-210.857l-63.429-126.286c-6.286-13.143-21.143-21.143-35.429-20-15.429 1.714-28 11.429-32 26.286l-73.714 245.714-112-392c-4.571-15.429-18.857-26.286-36-26.286-16.571 0-30.857 11.429-34.857 27.429l-66.286 265.143h-241.714c-30.286-45.714-58.857-105.714-58.857-171.429 0-167.429 102.286-267.429 273.143-267.429 100 0 193.714 78.857 238.857 123.429 45.143-44.571 138.857-123.429 238.857-123.429 170.857 0 273.143 100 273.143 267.429z"></path>
             </svg>
           </div>
-          <h1 className="home-text41">A unique approach to veterinary care</h1>
+          <h1 className="home-text26">A unique approach to veterinary care</h1>
         </div>
       </div>
       <div className="home-container09">
@@ -356,16 +405,18 @@ const Home = (props) => {
         </div>
       </div>
       <div className="home-container14">
-        <h1 className="home-text42">Two Animal Hospitals in One.</h1>
-        <span className="home-text43">
+        <h1 className="home-text27">Two Animal Hospitals in One.</h1>
+        <span className="home-text28">
           Our ability to meet the diverse needs of pets and their families is
           just one of many things that set us apart. VETOPIA offers three
           distinct areas of care in one spacious, ultra-modern facility in the
           Philippines.
         </span>
         <div className="home-container15">
-          <button className="home-button1 button">GENERAL PRACTICE</button>
-          <button className="home-button2 button">EMERGENCY CARE</button>
+          <button className="home-button button">GENERAL PRACTICE</button>
+          <Link to="/emergency" className="home-navlink17 button">
+            EMERGENCY CARE
+          </Link>
         </div>
       </div>
       <div className="home-container16">
@@ -373,10 +424,10 @@ const Home = (props) => {
           <div className="home-container18">
             <div className="home-container19"></div>
             <div className="home-container20">
-              <h1 className="home-text44">GENERAL</h1>
+              <h1 className="home-text29">GENERAL</h1>
             </div>
             <div className="home-container21">
-              <h1 className="home-text45">PRACTICE</h1>
+              <h1 className="home-text30">PRACTICE</h1>
             </div>
           </div>
         </div>
@@ -384,14 +435,16 @@ const Home = (props) => {
           <svg viewBox="0 0 1024 1024" className="home-icon04">
             <path d="M731.429 585.143h174.286c-6.857 7.429-11.429 11.429-12.571 12.571l-356 342.857c-6.857 6.857-16 10.286-25.143 10.286s-18.286-3.429-25.143-10.286l-356.571-344c-1.143-0.571-5.714-4.571-12-11.429h210.857c16.571 0 31.429-11.429 35.429-27.429l40-160.571 108.571 381.143c4.571 15.429 18.857 26.286 35.429 26.286v0c16 0 30.286-10.857 34.857-26.286l83.429-277.143 32 64c6.286 12 18.857 20 32.571 20zM1024 340.571c0 65.714-28.571 125.714-58.857 171.429h-210.857l-63.429-126.286c-6.286-13.143-21.143-21.143-35.429-20-15.429 1.714-28 11.429-32 26.286l-73.714 245.714-112-392c-4.571-15.429-18.857-26.286-36-26.286-16.571 0-30.857 11.429-34.857 27.429l-66.286 265.143h-241.714c-30.286-45.714-58.857-105.714-58.857-171.429 0-167.429 102.286-267.429 273.143-267.429 100 0 193.714 78.857 238.857 123.429 45.143-44.571 138.857-123.429 238.857-123.429 170.857 0 273.143 100 273.143 267.429z"></path>
           </svg>
-          <span className="home-text46">
+          <span className="home-text31">
             Our general practice center offers wellness exams, vaccinations, and
             other preventive services to support your pet’s routine healthcare
             needs. From puppies and kittens to senior pets, we invest everything
             we have into giving them the best quality of life possible.
           </span>
-          <button className="home-button3 button">SEE ALL SERVICES</button>
-          <button className="home-button4 button">MAKE AN APPOINTMENT</button>
+          <button className="home-button1 button">SEE ALL SERVICES</button>
+          <Link to="/make-an-appointment" className="home-navlink18 button">
+            MAKE AN APPOINTMENT
+          </Link>
         </div>
       </div>
       <div className="home-container23">
@@ -399,39 +452,775 @@ const Home = (props) => {
           <svg viewBox="0 0 1024 1024" className="home-icon06">
             <path d="M731.429 640v-109.714c0-10.286-8-18.286-18.286-18.286h-128v-128c0-10.286-8-18.286-18.286-18.286h-109.714c-10.286 0-18.286 8-18.286 18.286v128h-128c-10.286 0-18.286 8-18.286 18.286v109.714c0 10.286 8 18.286 18.286 18.286h128v128c0 10.286 8 18.286 18.286 18.286h109.714c10.286 0 18.286-8 18.286-18.286v-128h128c10.286 0 18.286-8 18.286-18.286zM365.714 219.429h292.571v-73.143h-292.571v73.143zM146.286 219.429v731.429h-18.286c-70.286 0-128-57.714-128-128v-475.429c0-70.286 57.714-128 128-128h18.286zM822.857 219.429v731.429h-621.714v-731.429h91.429v-91.429c0-30.286 24.571-54.857 54.857-54.857h329.143c30.286 0 54.857 24.571 54.857 54.857v91.429h91.429zM1024 347.429v475.429c0 70.286-57.714 128-128 128h-18.286v-731.429h18.286c70.286 0 128 57.714 128 128z"></path>
           </svg>
-          <span className="home-text47">
+          <span className="home-text32">
             We’re the only animal hospital in the Philippines that offers
             24-hour emergency vet services seven days a week. Our emergency vet
             staff maintains consistent communication with your primary
             veterinarian for the highest level of care.
           </span>
-          <button className="home-button5 button">LEARN MORE</button>
-          <h1 className="home-text48">HAVING AN EMERGENCY?</h1>
-          <h1 className="home-text49">Call us at (999) 999-9999</h1>
+          <Link to="/emergency" className="home-navlink19 button">
+            LEARN MORE
+          </Link>
+          <h1 className="home-text33">HAVING AN EMERGENCY?</h1>
+          <h1 className="home-text34">Call us at (999) 999-9999</h1>
         </div>
         <div className="home-container25">
           <div className="home-container26">
             <div className="home-container27"></div>
             <div className="home-container28">
-              <h1 className="home-text50">24 HOUR</h1>
+              <h1 className="home-text35">24 HOUR</h1>
             </div>
             <div className="home-container29">
-              <h1 className="home-text51">EMERGENCY</h1>
+              <h1 className="home-text36">EMERGENCY</h1>
             </div>
           </div>
         </div>
       </div>
       <div className="home-container30">
-        <div className="home-container31">
-          <div className="home-container32">
-            <div className="home-container33">
-              <div className="home-container34">
-                <div className="home-div1">
+        <h1 className="home-text37">VETOPIA&apos;s Happy Pets</h1>
+      </div>
+      <div className="home-container31">
+        <div className="home-container32">
+          <div className="home-div1">
+            <DangerousHTML
+              html={`<!DOCTYPE html>
+<html>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+</head>
+
+<style>
+html *{
+    -webkit-font-smoothing: antialiased;
+}
+
+h3{
+    font-weight: 300!important;
+    font-size: 25px !important;
+}
+
+h4{
+    font-size: 18px !important;
+    font-weight: 300 !important;
+}
+
+
+footer{
+    margin-top:100px;
+    color: #555;
+    background: #fff;
+    padding: 25px;
+    font-weight: 300;
+    
+}
+
+.card.card-carousel {
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px ;
+    color: rgba(0,0,0,.87);
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.card.card-carousel img{
+    border-radius: 6px;
+}
+
+
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel .carousel-indicators {
+    bottom: 5px;
+}
+
+.carousel .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    text-indent: -999px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+    border-radius: 2px;
+}
+
+.carousel .carousel-indicators .active{
+    margin: 11px 10px; 
+} 
+
+.carousel .carousel-indicators li {
+    margin: 11px 10px;
+}
+
+.carousel .carousel-indicators .active {
+    margin-top: 10px;
+    transform: scale(1.5);
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    align-items: center;
+    width: 100% !important;
+    transition: transform .6s ease;
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel .carousel-caption {
+    padding-bottom: 45px;
+}
+
+.carousel .carousel-caption .material-icons {
+    position: relative;
+    top: 5px;
+}
+
+.carousel .carousel-control-next .material-icons{
+    z-index: 5;
+    display: inline-block;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    margin: auto;
+}
+
+.carousel .carousel-control-prev .material-icons {
+    z-index: 5;
+    display: inline-block;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    margin: auto;
+}
+.footer p{
+    margin-bottom: 0;
+}
+footer p a{
+    color: #555;
+    font-weight: 400;
+}
+
+footer p a:hover{
+    color: #9f26aa;
+    text-decoration: none;
+}
+
+</style>
+
+
+<body>
+
+ <div class="container">
+
+        
+        <div class="section" id="carousel">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mr-auto ml-auto">
+
+                    <!-- Carousel Card -->
+                    <div class="card card-raised card-carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img class="d-block w-100" src="https://images.pexels.com/photos/4587993/pexels-photo-4587993.jpeg?auto=compress&cs=tinysrgb&w=600"
+                              alt="First slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="https://images.pexels.com/photos/56733/pexels-photo-56733.jpeg?auto=compress&cs=tinysrgb&w=600"  alt="Second slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="https://images.pexels.com/photos/326012/pexels-photo-326012.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Third slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                
+                              </div>
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <i class="material-icons">keyboard_arrow_left</i>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                    </div>
+                    <!-- End Carousel Card -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+
+</body>
+</html>
+`}
+            ></DangerousHTML>
+          </div>
+        </div>
+        <div className="home-container33">
+          <div className="home-div2">
+            <DangerousHTML
+              html={`<!DOCTYPE html>
+<html>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+</head>
+
+<style>
+html *{
+    -webkit-font-smoothing: antialiased;
+}
+
+h3{
+    font-weight: 300!important;
+    font-size: 25px !important;
+}
+
+h4{
+    font-size: 18px !important;
+    font-weight: 300 !important;
+}
+
+
+footer{
+    margin-top:100px;
+    color: #555;
+    background: #fff;
+    padding: 25px;
+    font-weight: 300;
+    
+}
+
+.card.card-carousel {
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px ;
+    color: rgba(0,0,0,.87);
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.card.card-carousel img{
+    border-radius: 6px;
+}
+
+
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel .carousel-indicators {
+    bottom: 5px;
+}
+
+.carousel .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    text-indent: -999px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+    border-radius: 2px;
+}
+
+.carousel .carousel-indicators .active{
+    margin: 11px 10px; 
+} 
+
+.carousel .carousel-indicators li {
+    margin: 11px 10px;
+}
+
+.carousel .carousel-indicators .active {
+    margin-top: 10px;
+    transform: scale(1.5);
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    align-items: center;
+    width: 100% !important;
+    transition: transform .6s ease;
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel .carousel-caption {
+    padding-bottom: 45px;
+}
+
+.carousel .carousel-caption .material-icons {
+    position: relative;
+    top: 5px;
+}
+
+.carousel .carousel-control-next .material-icons{
+    z-index: 5;
+    display: inline-block;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    margin: auto;
+}
+
+.carousel .carousel-control-prev .material-icons {
+    z-index: 5;
+    display: inline-block;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    margin: auto;
+}
+.footer p{
+    margin-bottom: 0;
+}
+footer p a{
+    color: #555;
+    font-weight: 400;
+}
+
+footer p a:hover{
+    color: #9f26aa;
+    text-decoration: none;
+}
+
+</style>
+
+
+<body>
+
+ <div class="container">
+
+        
+        <div class="section" id="carousel">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mr-auto ml-auto">
+
+                    <!-- Carousel Card -->
+                    <div class="card card-raised card-carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img class="d-block w-100" src="https://images.pexels.com/photos/4987266/pexels-photo-4987266.jpeg?auto=compress&cs=tinysrgb&w=600"
+                              alt="First slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="https://images.pexels.com/photos/12660120/pexels-photo-12660120.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  alt="Second slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="https://images.pexels.com/photos/8691140/pexels-photo-8691140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                              <div class="carousel-caption d-none d-md-block">
+                                
+                              </div>
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <i class="material-icons">keyboard_arrow_left</i>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                    </div>
+                    <!-- End Carousel Card -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+
+</body>
+</html>
+`}
+            ></DangerousHTML>
+          </div>
+        </div>
+        <div className="home-container34">
+          <div className="home-div3">
+            <DangerousHTML
+              html={`<!DOCTYPE html>
+<html>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+</head>
+
+<style>
+html *{
+    -webkit-font-smoothing: antialiased;
+}
+
+h3{
+    font-weight: 300!important;
+    font-size: 25px !important;
+}
+
+h4{
+    font-size: 18px !important;
+    font-weight: 300 !important;
+}
+
+
+footer{
+    margin-top:100px;
+    color: #555;
+    background: #fff;
+    padding: 25px;
+    font-weight: 300;
+    
+}
+
+.card.card-carousel {
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px ;
+    color: rgba(0,0,0,.87);
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.card.card-carousel img{
+    border-radius: 6px;
+}
+
+
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel .carousel-indicators {
+    bottom: 5px;
+}
+
+.carousel .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    text-indent: -999px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+    border-radius: 2px;
+}
+
+.carousel .carousel-indicators .active{
+    margin: 11px 10px; 
+} 
+
+.carousel .carousel-indicators li {
+    margin: 11px 10px;
+}
+
+.carousel .carousel-indicators .active {
+    margin-top: 10px;
+    transform: scale(1.5);
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    align-items: center;
+    width: 100% !important;
+    transition: transform .6s ease;
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel .carousel-caption {
+    padding-bottom: 45px;
+}
+
+.carousel .carousel-caption .material-icons {
+    position: relative;
+    top: 5px;
+}
+
+.carousel .carousel-control-next .material-icons{
+    z-index: 5;
+    display: inline-block;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    margin: auto;
+}
+
+.carousel .carousel-control-prev .material-icons {
+    z-index: 5;
+    display: inline-block;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    margin: auto;
+}
+.footer p{
+    margin-bottom: 0;
+}
+footer p a{
+    color: #555;
+    font-weight: 400;
+}
+
+footer p a:hover{
+    color: #9f26aa;
+    text-decoration: none;
+}
+
+</style>
+
+
+<body>
+
+ <div class="container">
+
+        
+        <div class="section" id="carousel">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mr-auto ml-auto">
+
+                    <!-- Carousel Card -->
+                    <div class="card card-raised card-carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img class="d-block w-100" src="https://images.pexels.com/photos/9649682/pexels-photo-9649682.jpeg?auto=compress&cs=tinysrgb&w=600"
+                              alt="First slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="https://images.pexels.com/photos/991831/pexels-photo-991831.jpeg?auto=compress&cs=tinysrgb&w=600"  alt="Second slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="https://images.pexels.com/photos/1619690/pexels-photo-1619690.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Third slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                
+                              </div>
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <i class="material-icons">keyboard_arrow_left</i>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                    </div>
+                    <!-- End Carousel Card -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+
+</body>
+</html>
+`}
+            ></DangerousHTML>
+          </div>
+        </div>
+      </div>
+      <div className="home-container35">
+        <div className="home-container36">
+          <div className="home-container37">
+            <div className="home-container38">
+              <div className="home-container39">
+                <div className="home-div4">
                   <DangerousHTML
                     html={`<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.802548850011!2d121.04882269999999!3d14.5532811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8efd99aad53%3A0xb64b39847a866fde!2skodego!5e0!3m2!1sen!2sph!4v1680991754221!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`}
                   ></DangerousHTML>
                 </div>
-                <div className="home-container35">
+                <div className="home-container40">
                   <a href="#back to top" className="home-link">
                     <svg viewBox="0 0 1024 1024" className="home-icon08">
                       <path d="M981.333 512c0-129.579-52.565-246.997-137.472-331.861s-202.283-137.472-331.861-137.472-246.997 52.565-331.861 137.472-137.472 202.283-137.472 331.861 52.565 246.997 137.472 331.861 202.283 137.472 331.861 137.472 246.997-52.565 331.861-137.472 137.472-202.283 137.472-331.861zM896 512c0 106.069-42.923 201.984-112.469 271.531s-165.461 112.469-271.531 112.469-201.984-42.923-271.531-112.469-112.469-165.461-112.469-271.531 42.923-201.984 112.469-271.531 165.461-112.469 271.531-112.469 201.984 42.923 271.531 112.469 112.469 165.461 112.469 271.531zM554.667 682.667v-238.336l97.835 97.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-170.667-170.667c-4.096-4.096-8.789-7.168-13.824-9.259s-10.539-3.243-16.341-3.243c-5.547 0-11.136 1.067-16.341 3.243-5.035 2.091-9.728 5.163-13.824 9.259l-170.667 170.667c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l97.835-97.835v238.336c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667z"></path>
@@ -439,73 +1228,101 @@ const Home = (props) => {
                   </a>
                 </div>
               </div>
-              <div className="home-container36">
-                <span className="home-text52">
+              <div className="home-container41">
+                <span className="home-text38">
                   © 2023 VETOPIA. Proudly created by Group 1
                 </span>
-                <div className="home-container37">
-                  <div className="home-container38">
+                <div className="home-container42">
+                  <div className="home-container43">
                     <ReviewButton rootClassName="review-button-root-class-name2"></ReviewButton>
                   </div>
-                  <div className="home-container39">
-                    <div className="home-container40">
-                      <Faceboook
-                        rootClassName="faceboook-root-class-name2"
-                        className="home-component1"
-                      ></Faceboook>
-                    </div>
-                    <div className="home-container41">
-                      <Instagram
-                        rootClassName="instagram-root-class-name2"
-                        className="home-component2"
-                      ></Instagram>
-                    </div>
+                  <div className="home-container44">
+                    <a
+                      href="https://facebook.com"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="home-link1"
+                    >
+                      <div className="home-container45">
+                        <Faceboook
+                          rootClassName="faceboook-root-class-name2"
+                          className="home-component1"
+                        ></Faceboook>
+                      </div>
+                    </a>
+                    <a
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="home-link2"
+                    >
+                      <div className="home-container46">
+                        <Instagram
+                          rootClassName="instagram-root-class-name2"
+                          className="home-component2"
+                        ></Instagram>
+                      </div>
+                    </a>
                   </div>
-                  <div className="home-container42">
-                    <div className="home-container43">
-                      <Google
-                        rootClassName="google-root-class-name2"
-                        className="home-component3"
-                      ></Google>
-                    </div>
-                    <div className="home-container44">
-                      <Twitter
-                        rootClassName="twitter-root-class-name2"
-                        className="home-component4"
-                      ></Twitter>
-                    </div>
+                  <div className="home-container47">
+                    <a
+                      href="https://google.com"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="home-link3"
+                    >
+                      <div className="home-container48">
+                        <Google
+                          rootClassName="google-root-class-name2"
+                          className="home-component3"
+                        ></Google>
+                      </div>
+                    </a>
+                    <a
+                      href="https://twitter.com"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="home-link4"
+                    >
+                      <div className="home-container49">
+                        <Twitter
+                          rootClassName="twitter-root-class-name2"
+                          className="home-component4"
+                        ></Twitter>
+                      </div>
+                    </a>
                   </div>
                 </div>
-                <div className="home-container45">
-                  <div className="home-container46"></div>
-                  <div className="home-container47">
-                    <span className="home-text53 Footer">appointments</span>
-                    <div className="home-container48">
+                <div className="home-container50">
+                  <div className="home-container51"></div>
+                  <div className="home-container52">
+                    <span className="home-text39 Footer">appointments</span>
+                    <div className="home-container53">
                       <span className="footer_black1">mon - fri:</span>
-                      <span className="home-text55 footer11">
+                      <span className="home-text41 footer11">
                         8:00 am - 6:00 pm
                       </span>
                     </div>
-                    <div className="home-container49">
+                    <div className="home-container54">
                       <span className="footer_black1">sat:</span>
-                      <span className="home-text57 footer11">
+                      <span className="home-text43 footer11">
                         8:00 am - 2:00 pm
                       </span>
                     </div>
                   </div>
-                  <div className="home-container50">
-                    <span className="home-text58 Footer">emergencies</span>
-                    <span className="home-text59 footer11">
+                  <div className="home-container55">
+                    <span className="home-text44 Footer">emergencies</span>
+                    <span className="home-text45 footer11">
                       24 hours &amp; 7 days a week
                     </span>
                     <span className="footer_black1">(999) 999-9999</span>
                   </div>
                 </div>
               </div>
-              <div className="home-container51">
-                <div className="home-container52"></div>
-                <div className="home-container53">
-                  <div className="home-div2">
+              <div className="home-container56">
+                <div className="home-container57"></div>
+                <div className="home-container58">
+                  <div className="home-div5">
                     <DangerousHTML
                       html={`<!DOCTYPE html>
 <html>

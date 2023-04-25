@@ -1,14 +1,11 @@
-.review-button-container {
+.review-button1-container {
   display: flex;
   position: relative;
 }
-.review-button-lottie-node {
+.review-button1-lottie-node {
   width: 300px;
   height: 300px;
 }
-
-
-
 
 
 

@@ -5,4 +5,16 @@
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
+  justify-content: flex-start;
+}
+.make-an-appointment-container1 {
+  width: 1920px;
+  height: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.make-an-appointment-div {
+  width: 1920px;
+  height: 960px;
 }

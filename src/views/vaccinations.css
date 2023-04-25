@@ -6,3 +6,15 @@
   align-items: center;
   flex-direction: column;
 }
+.vaccinations-container1 {
+  flex: 0 0 auto;
+  width: 1920px;
+  height: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vaccinations-div {
+  width: 1920px;
+  height: 960px;
+}

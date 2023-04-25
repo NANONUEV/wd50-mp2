@@ -6,3 +6,15 @@
   align-items: center;
   flex-direction: column;
 }
+.review-us-container1 {
+  flex: 0 0 auto;
+  width: 1920px;
+  height: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.review-us-div {
+  width: 1920px;
+  height: 960px;
+}

@@ -6,7 +6,11 @@ import './header.css'
 
 const Header = (props) => {
   return (
-    <header id="back to top" data-role="Accordion" className="header-header">
+    <header
+      id="back to top"
+      data-role="Accordion"
+      className={`header-header ${props.rootClassName} `}
+    >
       <img
         alt={props.image_alt}
         src={props.image_src}
@@ -251,6 +255,7 @@ const Header = (props) => {
 }
 
 Header.defaultProps = {
+  rootClassName: '',
   text5: 'surgery',
   text7: 'teeth cleaning',
   text6: 'spay & neuter',
@@ -271,6 +276,7 @@ Header.defaultProps = {
 }
 
 Header.propTypes = {
+  rootClassName: PropTypes.string,
   text5: PropTypes.string,
   text7: PropTypes.string,
   text6: PropTypes.string,
